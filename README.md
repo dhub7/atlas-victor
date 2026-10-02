@@ -18,7 +18,7 @@ O que está vivo agora é o cofre, não a publicação.
 - Aberto, único multipart: `04.20.2026/A023C982_260420WC_CANON_P.CRM`, 181 GiB, fatia 19 MiB, **parte 5908/9733 (~61%)** no fim do log escrito 19:58 Brasília de 01/10. Starlink segue quebrando o pipe; o script espera e não pula o arquivo. É o 2/2 da pasta. Quando der `FECHOU`, este clique acaba.
 - Não clicar Mandar. Não republicar o app. Não Control+C. O Drive (https://driveatlasvictor.vercel.app) só mostra objeto fechado. `LastModified` de large file é a hora que começou.
 
-O lançamento escrito **07/10/2026** está a seis dias. O critério antigo (1 episódio ponta a ponta no sistema, 1 publish com OK, 8 pacotes, Manager no Telegram) não foi atingido. Tratar 07/10 como data de sistema é falso. A operação começa pelo que eles já têm pronto, publicado na mão, com OK humano.
+O **07/10/2026** deixou de ser lançamento. Em 22/09, no WhatsApp pessoal, o Victor mudou para **depois das eleições: 29/10/2026**, sempre **quinta-feira, 14:00 em Nova York**. O último longo do ano, nas contas dele, é **31/12, Chicago**. 14:00 em Nova York no dia 29/10 ainda é horário de verão: **15:00 em Brasília**. A partir de 05/11 o relógio de Nova York volta e o mesmo 14:00 vira **16:00 em Brasília**. A frase dele “1h no Brasil” não bate com nenhum dos dois. O critério antigo (1 episódio ponta a ponta no sistema, 1 publish com OK, 8 pacotes, Manager no Telegram) continua não atingido. A operação começa pelo que eles já têm pronto, publicado na mão, com OK humano.
 
 ## 2. O que já foi construído
 
@@ -50,7 +50,7 @@ Continuam:
 
 Mudam:
 
-- O roadmap B1–B8 e o calendário até 07/10 passam a histórico. `00_TUDO_DO_PROJETO.md` e o §0 do roadmap já eram foto de julho. `quadro/AGORA.md` continua sendo o agora operacional do cofre até este plano ser aceito e instalado.
+- O roadmap B1–B8 e o calendário de 07/10 passam a histórico. A data viva é 29/10, quinta, 14:00 em Nova York. `00_TUDO_DO_PROJETO.md` e o §0 do roadmap já eram foto de julho. `quadro/AGORA.md` continua sendo o agora operacional do cofre até este plano ser aceito e instalado.
 - O cineasta não cria um fluxo paralelo de corte (ffmpeg, preview solto, `.drp` novo por short). O short nasce **dentro do projeto Resolve que eles já usam**.
 - A árvore `YT-MAIN/episodes/{slug}` não é imposta em cima da mídia que já está no Lucid. O slug é índice. A pasta física continua a deles.
 - Não ligar dez agentes. A operação pede poucos papéis e uma esteira.
@@ -152,34 +152,70 @@ A esteira é uma linha por peça publicável (longo, short, corte legado), não 
 
 Quem mexe em cada coluna: Erik/Victor/Erica na edição e na finalização; Cineasta ou eles na timeline do short; Dudinha na thumbnail e no título; Caio no OK do short; Victor/Erica no OK do longo; uma pessoa no agendamento; ninguém publica sem a coluna de aprovado preenchida. O teste é uma coluna curta: o que se mediu (retenção dos 3s, inscrição, comentário) e se a peça seguinte muda por causa disso. Sem isso, “teste” vira feeling.
 
-A planilha deles é a fonte dessa esteira. Não está no repo. Busca no Google Drive desta conta, por planilha com Places / Victor / Short / conteúdo, voltou vazia. Até o arquivo chegar (link ou cópia), o quadro de conteúdo **não se inventa**. O inventário de 11/08 e o paper-cut do dia 09 são contexto, não status.
+A planilha que vale é a que o Victor mandou em 14/09 às 23:24, com a frase “planilha atualizada / já pode fazer com essa”:
 
-Quando a planilha chegar, o trabalho é mapear as colunas que eles já têm para os estágios acima, acrescentar só o que faltar (projeto Resolve, nome da timeline, quem aprovou, data de agenda, link publicado). Não se cria uma segunda tabela.
+https://docs.google.com/spreadsheets/d/1GZX2LiRcTHynDrC8R3xfz17avZf9wlSQBSkZX7-z8MM/edit
 
-O que já dá para dizer sem a planilha, e com data:
+Nome: `THE_PLACES_IN_BETWEEN_Master_Content___Production_Control_Sheet`. Dono: `victorpalermob@gmail.com`. Última alteração no arquivo: **15/09/2026 02:24 UTC**. A planilha anterior (`1CLvqH0KmZjdISzAN7Yy-_qiZqliY5R2J5WXKsNJSiWk`) foi a que ele chamou de “nosso controle” em 08/09; ele mesmo trocou pelo link novo.
+
+Em 22/09 ele disse que essa tabela é o que eles têm de melhor, e que **faltava atualizar** o que tinham fechado de episódios e shorts na semana anterior. O arquivo não foi modificado depois de 15/09. A conversa exportada acaba em 30/09. As células de data continuam no calendário velho (episódio 1 em 07/10). O que ele falou em 22/09 manda na data. As células mandam no que estava escrito em 15/09, e estão atrás da boca dele.
+
+Abas: `Production Status`, `Content Calendar`, `Episode Details`, `Shorts Tracker`, `README`, `Perfomance`.
+
+Colunas que já existem, e como entram na esteira:
+
+| Aba | Coluna deles | Estágio |
+|---|---|---|
+| Production Status | Editing, Mixing, Color Grade | em edição / finalização do longo |
+| Production Status | Caption, Thumbnail, Video Title | texto e thumbnail |
+| Production Status | Shorts Ready / Needed / Shortfall | short ainda falta cortar (meta: 2 por dia nos 6 dias entre longos = 12) |
+| Production Status | Long Episode Launch Date | agendado |
+| Production Status | Drive, YouTube Video Link | link do arquivo e link publicado. As duas estão vazias em todas as linhas |
+| Shorts Tracker | Short Production Status, Posting Status, Caption | corte, agenda e texto do short |
+| Shorts Tracker | Instagram, TikTok, YouTube Shorts, Facebook | link publicado por rede |
+| Perfomance | impressões, CTR, retenção 30s, watch time | a coluna de teste. Só o episódio 1 tem rascunho de título e thumb |
+
+Não se cria segunda tabela. Falta na planilha, e só se acrescenta se eles quiserem: nome do projeto Resolve, máquina, quem aprovou. O OK do Caio no short e o OK do Victor/Erica no longo não têm coluna.
+
+O que as células diziam em 15/09, sem tratar isso como o estado de hoje:
+
+| Ep | Título na planilha | O que está mais perto de pronto | Data na célula |
+|---|---|---|---|
+| 1 | Micanopy, Florida | Edição, mix, cor, legenda e título Completed. Thumb In Progress. 10 de 12 shorts | 07/10, quarta |
+| 2 | Ozarks, Arkansas — Part 1 | Edição e mix Completed. Cor In Progress. 6 shorts | 14/10 |
+| 3 | Ozarks, Arkansas — Part 2 | Edição In Progress. 0 shorts | 21/10 |
+| 4 | Ozarks, Arkansas — Part 3 | Not Started | 28/10 |
+| 5 | South Dakota — 1808 Town | Edição, mix e legenda Completed. Cor In Progress. 6 shorts | 04/11 |
+| 6 | South Dakota — Deadwood | Edição In Progress | 11/11 |
+| 7 | Yellowstone | Not Started | 18/11 |
+| 8 | Washington — Pousbo | Not Started. O nome na célula está assim | 25/11 |
+
+Em 22/09 ele falou por cima disso: Arkansas 01 e 02 já finalizados, ele editando o Arkansas 03, 10 episódios filmados, Chicago incluído como episódio e marcado como o de 31/12. Chicago não aparece nas 8 linhas. O episódio extra que ele disse ter filmado em 21/09 também não tem nome na conversa. Não inventar a nona e a décima linha.
+
+O que já dá para dizer, com data:
 
 - Pronto como sistema de publish: nada.
+- Primeiro longo a preparar na mão: **Micanopy**. É o único com edição, mix, cor, legenda e título marcados Completed. Não publica em 07/10. A data que vale, até ele reescrever a célula, é **29/10, 14:00 Nova York**. Thumb ainda estava In Progress e faltam 2 shorts na célula de 15/09.
 - Pronto como ideia de short do dia 09: cinco paper-cuts. Execução descartada. Não estão dentro de um projeto Resolve nosso.
-- Pronto como cofre desta fila: quatro CRM fechados; C982 aberto.
-- Pronto como edição humana: há exports e pelo menos um `.drp` na foto de agosto. A lista viva está com eles.
+- Pronto como cofre desta fila: C972 e C985 fechados; C982 aberto até o `FECHOU`.
+- Música famosa no YouTube Shorts: **não está nessa conversa.** A pergunta continua aberta.
 
 ## 9. Próximas etapas — só depois deste plano aceito
 
 Nenhuma destas etapas começa nesta conversa.
 
 1. Deixar o C982 terminar. Acompanhar pelo log. Não encostar no Mac.
-2. Receber a planilha e escrever o mapa de colunas. Uma página, sem migrar os dados.
-3. Listar os projetos Resolve que eles consideram “o projeto” de cada lugar, e em qual máquina abrem. Confirmar Free ou Studio, e a versão.
+2. Pedir ao Victor para atualizar a planilha que ele já mandou: datas para as quintas a partir de 29/10, Arkansas como ele descreveu em 22/09, Chicago em 31/12, e o episódio filmado em 21/09 com o nome certo. Não migrar os dados para outro arquivo.
+3. Listar os projetos Resolve que eles consideram “o projeto” de cada lugar, e em qual máquina abrem. Confirmar Free ou Studio, e a versão. Isso não está no WhatsApp.
 4. Instalar este texto como plano canônico do projeto e marcar o roadmap B4–B8 como histórico. `AGORA.md` passa a apontar para a esteira, sem apagar o aviso do Mandar enquanto o job viver.
-5. Escolher com eles o primeiro lote que a planilha diz que está pronto e publicar esse lote na mão, com OK, pelo YouTube Studio. Esse é o teste da esteira. Não é um agente.
+5. Preparar o Micanopy para 29/10, na mão, com OK, pelo YouTube Studio, quando thumb e os shorts que faltam estiverem fechados na planilha. Esse é o teste da esteira. Não é um agente.
 6. Só então: profile Hermes `berlota` que lê a planilha e responde status. Um short piloto como timeline `ATLAS-SHORT-` dentro de um projeto existente, na máquina certa, se o Studio 21.1 estiver lá.
 
-## 10. O que precisa do Daniel antes do passo 2
+## 10. O que ainda não está na conversa
 
-- Onde está a planilha (link ou arquivo) e quem é o dono.
 - Resolve de quem edita é Studio? Qual versão, qual máquina?
-- 07/10 ainda é lançamento público ou a data já escorregou na conversa com eles?
-- Música famosa no YouTube Shorts: alcance ou receita?
+- Música famosa no YouTube Shorts: alcance ou receita? Procurei música, trilha e direito autoral no export. Não tem.
+- O nome do episódio filmado em 21/09, e onde Chicago entra na ordem além de ser o de 31/12.
 
 ## 11. O que não fazer
 
