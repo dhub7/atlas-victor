@@ -1,4 +1,6 @@
-﻿> Proposta para avaliação em 01/10/2026. Ainda não está instalada como plano canônico dentro da pasta do projeto. O envio B2 da Erica não foi mexido.
+> 12/10/2026. O retrato do projeto inteiro, para outra IA avaliar, esta em [HOJE.md](HOJE.md). O texto abaixo e a proposta de 01/10. Os numeros de upload dele sao dessa data.
+
+> Proposta para avaliação em 01/10/2026. Ainda não está instalada como plano canônico dentro da pasta do projeto. O envio B2 da Erica não foi mexido.
 >
 > Avaliação de código de 01/10 incorporada na mesma noite. O GitHub `atlas-inbox-mac` foi alinhado ao `2026.09.23.2` (`c815611`) sem publicar no B2. Resume por tamanho e mtime, SHA1 mais tamanho da parte, `FECHOU` só com `get_file_info` e o link de download assinado já estavam nessa versão. O patch seguinte (timeout por progresso, cancelar unfinished sem `fileInfo`, rclone só abaixo de 64 MB) está na pasta local e no GitHub, e não sobe para o Mac até o `FECHOU` do C982. Manifesto e trava da URL ficam para depois. O caminho do produto abaixo não muda.
 # Projeto Victor — reorganização e novo plano
