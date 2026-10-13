@@ -32,7 +32,7 @@ O lançamento escrito no roadmap era 07/10/2026. No WhatsApp de 22/09 o Victor m
 |---|---|---|---|
 | `06_Roadmap_Execucao.md` | desenho de julho, reancorado em 11/08 | Blocos B0–B8, dez agentes, calendário até 07/10 | O agora |
 | README deste repo | 01/10 | Proposta de reorganização: parar a fábrica, operar o que eles já editaram, corte dentro do Resolve deles, planilha como esteira | Plano instalado na pasta. Os números de upload desse README são de 01/10 |
-| Este arquivo | 12/10 | Retrato do projeto inteiro para outra IA avaliar | Ordem de execução. A conversa de 12/10 sobre Hermes na VM ainda não foi aceita como plano |
+| Este arquivo | 12/10 | Retrato do projeto inteiro para outra IA avaliar | Quadro do upload. O plano novo está na seção «Plano aceito em 12/10» e em `PLANO.md` |
 
 O quadro operacional da pasta continua `07_Execucao/quadro/AGORA.md`, fechado em 02/10 no teste do DaVinci. A foto do Mandar dentro dele é de 30/09.
 
@@ -80,11 +80,11 @@ O roadmap parte o trabalho em B0–B8, mais o site como B9. Estado real em 12/10
 
 | Bloco | No papel | Hoje |
 |---|---|---|
-| **B0 Infra** | Contas, B2, Lucid, VPS, n8n, Telegram, matriz de papéis | Feito em 17/08. Hetzner no lugar de AWS. Bot é FSM, não LLM. Veio depois, e está no ar: app Mandar e o Drive web. Isso não estava no B0 original |
+| **B0 Infra** | Contas, B2, Lucid, VPS, n8n, Telegram, matriz de papéis | Feito em 17/08. Hetzner no lugar de AWS. Bot é FSM, não LLM. Veio depois, e está no ar: app Mandar e o Drive web. Plano de 12/10, não construído: um Hermes novo na VM, só para os agentes deste projeto. O Hermes do PC do Daniel não entra |
 | **B1 Ingestão** | Watch de proxy para o Lucid, bruto para o B2, meta por episódio, n8n criando pasta | Não existe watch. O bruto sobe pelo Mandar, na mão, no Mac da Erica. Catálogo do piloto em `B1_Ingestao/catalog.json`. Os 598 de South Dakota no Lucid não foram copiados para o B2, de propósito. Espelho Dropbox→B2 de setembro terminou (2138 objetos, 1,12 TiB). Em 12/10 o espelho ainda falta Ozark, Chicago e 17 arquivos de YouTube. Essa cópia não foi autorizada |
 | **B2 Cérebro** | Store de estilo e um Manager que responde o que está pendente | Cards em markdown, `B2_Cerebro/v0/`. Alma, programa e nomes de pasta fechados em agosto. Notion/Airtable não foi escolhido. O bot não responde pendência de episódio. Telegram quieto |
 | **B3 Transcrição** | Um episódio inteiro com tempo e falante | Whisper `small` no VPS. Pacote do Rode do dia 09 aceito (Tartaruga1 e Tartaruga2 são os lavaliers, não blocos). Lavalier 19–20 não. Não virou job contínuo |
-| **B4 Cineasta** | Rough cut, Shorts, export e `.drp`, Caio aprova no Telegram | Não existe. O ensaio foi ffmpeg e YuNet no PC, paper-cut dos Shorts 1–5. Execução descartada em 25/09. Em 02/10 um teste no Resolve gratuito deste PC cortou o Micanopy pelo ffmpeg, porque o script não conecta. O Studio está nos dois Macs do Victor. Nenhum agente fala com eles |
+| **B4 Cineasta** | Rough cut, Shorts, export e `.drp`, Caio aprova no Telegram | Não existe como agente. O ensaio ffmpeg/YuNet foi descartado em 25/09. O teste de 02/10 no Resolve gratuito deste PC não conectou na API. Plano de 12/10, não construído: o Cineasta mora no Hermes da VM e mexe no Studio que já está nos dois Macs do Victor, por um programinha local e um túnel privado |
 | **B5 Texto, thumb, música** | Título, descrição, thumbs, trilha | Não existe como sistema. Dudinha e Caio continuam pessoas. Música famosa no YouTube Shorts segue pergunta: alcance ou receita |
 | **B6 Distribuição** | Publicar só depois do OK, com log | Nada passou pelo sistema. Zero publicação automática. O primeiro lote, se vier, sai na mão pelo YouTube Studio |
 | **B7 Dashboard** | Pendência por pessoa, calendário, kanban | Não existe. A planilha deles seria essa tela. Última edição do arquivo: 15/09. Link na seção da esteira |
@@ -110,9 +110,15 @@ O que roda:
 
 O que não roda: Manager com LLM, orquestrador, cineasta, redator, designer, música, distribuição, qualquer Hermes do ATLAS.
 
-A proposta de 01/10, neste mesmo README, reduz para quatro papéis e ainda não foi instalada: Berlota (a voz), Cineasta (timeline dentro do projeto Resolve que eles já abrem), Mesa (lê a planilha), Texto (título e legenda). Nesse texto o Hermes ficava no PC do Daniel. Isso não vale mais como lugar.
+A proposta de 01/10 reduz para quatro papéis e ainda não foi instalada: Berlota (a voz), Cineasta (timeline dentro do projeto Resolve que eles já abrem), Mesa (lê a planilha), Texto (título e legenda). Nesse texto o Hermes ficava no PC do Daniel. O lugar mudou: o Hermes do ATLAS é outro, na VM.
 
-Conversa de 12/10, ainda em revisão, não aceita como plano: o Hermes deste PC não tem relação com o Victor. A ideia é montar outro Hermes, na VM, só para gerenciar os agentes deste projeto. O Mandar e o programinha do Resolve ficam de fora dessa decisão. Não está construído.
+## Plano aceito em 12/10
+
+Está escrito em `PLANO.md` neste repo e em `07_Execucao/PLANO_ATLAS.md` na pasta. Nada disto está construído.
+
+**B0.** Um Hermes novo na VM gerencia os agentes do projeto. Um agente é um profile. O primeiro é a Berlota. O Hermes decide e reparte. Não sobe arquivo, não publica e não mexe no Mandar. O Hermes do PC do Daniel fica de fora. Não se instala Hermes no Mac. Victor e Erica continuam falando pelo Telegram, quieto até **manda**. O dashboard de atividade fica na VM e entra quando houver mais de um trabalho longo.
+
+**B4.** O Cineasta é um profile desse Hermes. A mão é um programinha no Mac do Victor, onde o Studio já está ativado com a chave Blackmagic. O programinha fala com o Resolve só em Local (`127.0.0.1`, com token). A VM manda a ordem por túnel privado. A porta 1144 não abre. Só um dos dois Macs recebe ordem por vez. O Resolve tem que estar aberto, com o Lucid montado e o projeto carregado. O primeiro teste só lê versão, projeto e timeline. O short nasce como timeline `ATLAS-SHORT-` numa cópia do projeto que eles já usam. Não se cria projeto novo por short. Não se publica, não se apaga e não se relinka mídia. O MCP oficial do Studio 21.1 pode ficar por baixo do programinha, se o Mac estiver nessa versão. Ele não substitui o túnel.
 
 ## Resolve
 
@@ -122,7 +128,7 @@ O PC do Daniel tem o Resolve 21.1.1 gratuito. `scriptapp("Resolve")` não conect
 
 O Studio 21.1, de 8 de setembro de 2026, tem MCP nativo em File > Setup AI Assistants. É atualização grátis para quem tem a chave da Blackmagic. Configura um assistente no próprio Mac. Não foi ligado nos Macs do Victor. A versão instalada em cada Mac não foi lida.
 
-Desenho de ponte, escrito e não construído: um programinha no Mac fala com o Resolve só em Local. A VM manda ordem por túnel privado. A porta de scripting de rede (1144) não tem senha e não abre. Um Mac recebe ordem por vez. Isso está em `07_Execucao/PLANO_ATLAS.md` na pasta do Daniel. Não faz parte da decisão do Hermes.
+A ponte do Cineasta está na seção «Plano aceito em 12/10». Não está construída. A porta 1144 continua fechada.
 
 ## Esteira que eles já têm
 
@@ -177,7 +183,7 @@ O Mac da Erica lê o app do B2, não do GitHub. Push no GitHub não atualiza o M
 
 1. Desenho de julho (dez agentes, B0–B8, lançamento 07/10). Quase só o B0 saiu do papel. B1–B3 saíram pela metade, por outro caminho.
 2. Proposta de 01/10 (quatro papéis, corte no Resolve deles, planilha como esteira, fábrica B4–B8 vira histórico). Escrita. Não instalada. Upload descrito nela está velho.
-3. Conversa de 12/10 (Hermes novo na VM, licença Blackmagic nos dois Macs, ponte desenhada e não feita). Não é plano aceito. O Mandar não é o assunto dessa estrutura.
+3. Plano de 12/10, aceito e não construído. B0 ganha um Hermes novo na VM para gerenciar os agentes. B4, o Cineasta, usa o Resolve Studio que já está nos dois Macs, por programinha local e túnel. O Mandar não faz parte dessas duas peças.
 
 ## Perguntas abertas
 
